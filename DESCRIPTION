@@ -1,0 +1,58 @@
+Package: traveltime
+Title: Calculate Travel Times Over Space
+Version: 1.0.0
+Authors@R: c(
+    person(
+      given = "Gerry", 
+      family = "Ryan",
+      email = "gerry.ryan@thekids.org.au", 
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0000-0003-0183-7630")
+      ),
+    person(
+      given = "Daniel", 
+      family = "Weiss", 
+      role = "aut", 
+      comment = c(ORCID = "0000-0002-6175-5648")
+      ),
+    person(
+      given = "Nicholas", 
+      family = "Tierney", 
+      email = "nicholas.tierney@gmail.com", 
+      role = c("ctb"),
+      comment = c(ORCID = "0000-0003-1460-8722")
+      )
+  )
+Description: Calculate travel time across a landscape from a set of
+    user-specified locations, over a friction surface describing the time
+    taken to cross each cell. Implements the least-cost travel time approach
+    of Weiss et al. (2018) <doi:10.1038/nature25181> and Weiss et al. (2020)
+    <doi:10.1038/s41591-020-1059-1>, and provides convenient access to their
+    global walking and motorised friction surfaces via the 'malariaAtlas'
+    package. Travel times are computed with 'terra'. See Ryan et al. (2025)
+    <doi:10.12688/gatesopenres.16356.1> for further details.
+License: MIT + file LICENSE
+Copyright: The 'stations' data contains information from the Land
+        Transport Authority of Singapore, made available under the
+        Singapore Open Data Licence version 1.0; see ?stations.
+Imports: cli, malariaAtlas, terra
+Encoding: UTF-8
+Language: en-GB
+RoxygenNote: 7.3.3
+Suggests: geodata, ggplot2, knitr, rmarkdown, testthat (>= 3.0.0),
+        tidyterra
+Config/testthat/edition: 3
+Depends: R (>= 4.1.0)
+LazyData: true
+URL: https://idem-lab.github.io/traveltime/,
+        https://github.com/idem-lab/traveltime
+BugReports: https://github.com/idem-lab/traveltime/issues
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2026-10-21 03:11:00 UTC; gryan
+Author: Gerry Ryan [aut, cre] (ORCID: <https://orcid.org/0000-0003-0183-7630>),
+  Daniel Weiss [aut] (ORCID: <https://orcid.org/0000-0002-6175-5648>),
+  Nicholas Tierney [ctb] (ORCID: <https://orcid.org/0000-0003-1460-8722>)
+Maintainer: Gerry Ryan <gerry.ryan@thekids.org.au>
+Repository: CRAN
+Date/Publication: 2026-10-31 11:50:02 UTC
